@@ -6,6 +6,7 @@ export default Ember.Component.extend({
 	tagName: 'a',
 	attributeBindings: ['href', 'lazyload-src', 'data-lightbox', 'data-title', 'data-class'],
 	inlineImage: true,
+  lazyloadActive: false,
 	classNames: ['ember-lightbox'],
 	classNameBindings: ['inlineImage']
 });

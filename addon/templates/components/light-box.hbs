@@ -1,4 +1,4 @@
-{{#if lazyload-src}}
+{{#if lazyloadActive}}
   {{#if inlineImage}}<img src="{{unbound href}}" data-src="{{unbound lazyload-src}}" title="{{unbound data-title}}" class="lazyload {{unbound data-class}}"/>{{/if}}{{yield}}
 {{else}}
   {{#if inlineImage}}<img src="{{unbound href}}" title="{{unbound data-title}}" class="{{unbound data-class}}"/>{{/if}}{{yield}}
