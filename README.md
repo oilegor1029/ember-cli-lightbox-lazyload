@@ -4,7 +4,8 @@ A lightbox component for ember using [Lightbox2](http://lokeshdhakar.com/project
 
 ## Usage
 
-* `ember install ember-cli-lightbox`
+* `npm install --save ember-cli-lightbox`
+* `ember g ember-cli-lightbox`
 
 Preview image on image click
 ```hbs
@@ -24,43 +25,12 @@ Preview image on some DOM click
 {{/light-box}}
 ```
 
-## Configuration
-
-Setting [global lightbox options](http://lokeshdhakar.com/projects/lightbox2/#options):
-```javascript
-// config/enironment.js
-module.exports = function(environment) {
-  var ENV = {
-    //...
-    'ember-cli-lightbox': {
-    	lightboxOptions: {
-    		alwaysShowNavOnTouchDevices: 	false,
-    		albumLabel:						"Image %1 of %2",
-    		disableScrolling:				false,
-    		fadeDuration:					500,
-    		fitImagesInViewport:			true,
-    		maxWidth:						1000,
-    		maxHeight:						1000,
-    		positionFromTop:				50,
-    		resizeDuration:					700,
-    		showImageNumberLabel:			true
-    	}
-    }
-  };
-  //...
-
-  return ENV;
-};
-```
-
 ## Ember Compatibility Table
 
-| Ember Version			| Ember-Cli-Lightbox Version |
-| ---------------------	| ---------------------------|
-| 1.8 through 1.10		| 0.2.0                      |
-| 1.11 through 1.13		| 0.3.0 =< x < 1.0.0         |
-| 2.0 and beyond 		| >=1.0.0                    |
-| Addons				| >=2.0.0                    |
+| Ember Version    | Lightbox Version     |
+| -----------------| ---------------------|
+| 1.8 through 1.10 | 0.2.0                |
+| 1.11 and beyond  | >=0.3.0              |
 
 ## Demo
 Check out the demo on [github pages](http://ramybenaroya.github.io/ember-cli-lightbox/ "Ember-cli-lightbox Demo").
@@ -71,7 +41,8 @@ $ npm install -g ember-cli
 $ git clone git@github.com:ramybenaroya/ember-cli-lightbox
 $ cd ember-cli-lightbox
 # install dependencies
-$ npm i
+$ npm install; bower install
+$ ember g ember-cli-lightbox
 # fire up local server
 $ ember serve
 ```

@@ -1,83 +1,42 @@
-/* eslint-env node */
 module.exports = {
   scenarios: [
     {
-      name: 'ember-lts-2.8',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#lts-2-8'
-        },
-        resolutions: {
-          'ember': 'lts-2-8'
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-lts-2.12',
-      npm: {
-        devDependencies: {
-          'ember-source': '~2.12.0'
-        }
-      }
+      name: 'default',
+      dependencies: { }
     },
     {
       name: 'ember-release',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#release'
-        },
-        resolutions: {
-          'ember': 'release'
-        }
+      dependencies: {
+        'ember': 'components/ember#release'
       },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
+      resolutions: {
+        'ember': 'release'
       }
-    },
+    }
+    
+    /* These were commented out until https://github.com/rwjblue/ember-qunit/issues/52 is fixed */
+    
+    /*
+    ,
     {
       name: 'ember-beta',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#beta'
-        },
-        resolutions: {
-          'ember': 'beta'
-        }
+      dependencies: {
+        'ember': 'components/ember#beta'
       },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
+      resolutions: {
+        'ember': 'beta'
       }
     },
     {
       name: 'ember-canary',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#canary'
-        },
-        resolutions: {
-          'ember': 'canary'
-        }
+      dependencies: {
+        'ember': 'components/ember#canary'
       },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-default',
-      npm: {
-        devDependencies: {}
+      resolutions: {
+        'ember': 'canary'
       }
     }
+    */
+    
   ]
 };
